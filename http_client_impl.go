@@ -23,7 +23,6 @@ type HttpClientOptions struct {
 }
 
 func NewHttpClient(opts *HttpClientOptions) *HttpClientImpl {
-
 	return &HttpClientImpl{
 		HttpClient: &http.Client{
 			Transport: &transport.InterceptorManagerTransport{
